@@ -1,17 +1,14 @@
 module.exports = function getZerosCount(number) {
   
-  var d = 5, i = 1;
-  var x;
-  var sum = 0;
+  var d = 5, i = 1, sum = 0;
 
   while(number>d){
-    x = number / d;
+    var x = Math.floor(number/d);
     sum += x;
-    i++;
-    d = d^i;
+    d = Math.pow(5, ++i);
   }
    
-  return Math.round(sum);
+  return sum;
 }
 
 
