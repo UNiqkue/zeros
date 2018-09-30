@@ -11,6 +11,8 @@ module.exports = function getZerosCount(number) {
     d = d^i;
   }
    
-  return sum;
+  return Math.round(sum);
 }
+
+
 
